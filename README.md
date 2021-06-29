@@ -147,3 +147,29 @@ def test_pep8_conformance_user(self) - Test that models/user.py conforms to PEP8
 def test_pep8_conformance_test_user(self) - Test that tests/test_models/test_user.py conforms to PEP8
 def test_user_module_docstring(self) - Test for the user.py module docstring
 def test_user_class_docstring(self) - Test for the User class docstring
+Examples of use
+vagrantAirBnB_clone$./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  create  destroy  help  quit  show  update
+
+(hbnb) all MyModel
+** class doesn't exist **
+(hbnb) create BaseModel
+7da56403-cc45-4f1c-ad32-bfafeb2bb050
+(hbnb) all BaseModel
+[[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
+(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
+(hbnb) destroy BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
+** no instance found **
+(hbnb) quit
+Bugs
+No known bugs at this time.
+
+Authors
+Abenezer Asamenew - Github / Twitter 
+Alex Steve - Github / Twitter
